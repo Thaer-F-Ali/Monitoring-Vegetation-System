@@ -1,5 +1,7 @@
 from osgeo import gdal
+import sys
 
+fn = "G:/temp/boatman1-2-eg4.tif"
 ds = gdal.Open(fn)
 if not ds:
     print("Unable to open the file")
@@ -44,5 +46,5 @@ print("the value of x is ", xsize1, " the value of y is ", ysize1)
 
 ds = None
 dst_ds = None
-
+print("Here is the statment where the GitHup is added")
 print("the file has written successfully")
